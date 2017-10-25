@@ -1,1 +1,43 @@
-{"info":{"title":"rkhome","description":"","version":"1.0.0"},"openapi":"3.0.0"}
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "rkhome",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/getPeopleListView": {
+      "get": {},
+      "parameters": [
+        {
+          "name": "callid",
+          "in": "query",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        {
+          "name": "search",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "start",
+          "in": "query",
+          "schema": {
+            "type": "integer"
+          }
+        },
+        {
+          "name": "length",
+          "in": "query",
+          "schema": {
+            "type": "integer"
+          }
+        }
+      ]
+    }
+  }
+}
